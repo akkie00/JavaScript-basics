@@ -60,3 +60,31 @@ var regexp = /[A-Za-z0-9\s_]/gi;
 
 14. //using search()
 // console.log(fullString.search(/world/g));
+
+15. //using slice() 
+// It is used take a certain part of string. AKA slicing the string like a "pice of cake"
+var first = "        Goodbye";
+var second = "world";
+var third = "Goodbye world";
+// console.log(string1.slice(0, 1));
+
+16. // using split()
+var input = 'john smith~123 Street~Apt 4~New York~NY~12345';
+// console.log(input.split('~'));
+
+17. //using startsWith()
+// console.log(first.startsWith('Goo'));
+
+18. //using substr()
+// console.log(first.substr(1,1));
+
+19. //using toLowerCase() and toUpperCase()
+// console.log(first.toLowerCase(), second.toUpperCase());
+
+20. //using trim(), trimLeft(), trimRight()
+// console.log(first.trimLeft());
+
+21. //using toString() converts any datatype except string to string dt
+var num = true; //var num = 123;
+// console.log( typeof num.toString());
+
