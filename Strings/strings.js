@@ -66,7 +66,7 @@ var regexp = /[A-Za-z0-9\s_]/gi;
 var first = "        Goodbye";
 var second = "world";
 var third = "Goodbye world";
-// console.log(string1.slice(0, 1));
+// console.log(third.slice(0, 1));
 
 16. // using split()
 var input = 'john smith~123 Street~Apt 4~New York~NY~12345';

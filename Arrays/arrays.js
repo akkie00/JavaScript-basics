@@ -44,4 +44,21 @@ var fifthArray = thirdArray.filter((element)=>{
 var find = thirdArray.find((element)=>{
     return element > 3;
 });
-console.log(find);
+// console.log(find);
+
+9. //using findIndex()
+// unlike find it returns the index of the value. whereas find() returns the value of the 
+// first element which satisfies the condition.
+console.log(thirdArray);
+console.log(thirdArray.findIndex((element)=>{
+    return element > 4;
+}))
+
+10. //using forEach()
+thirdArray = [1,2,3,4,5];
+console.log(thirdArray);
+thirdArray.forEach((element, index, array) => {
+    console.log(element+" - "+ index+ " - "+array+ "hey");
+});
+
+11. 
