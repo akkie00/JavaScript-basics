@@ -62,5 +62,13 @@ function incDecOps(a,b){
 console.log(incDecOps(5));
 
 function assignmentOps(){
-    
+    let val1 = 12;
+    // val1 += 6;
+    // val1 *=6;
+    // val1 /= 6;
+    // val1 %=6;
+
+    return val1;
+
 }
+console.log(assignmentOps())
