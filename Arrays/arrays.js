@@ -119,4 +119,7 @@ let example3 = example1.some((element)=>{
 })
 console.log(example3);
 
-22. //using 
+22. //using unshift()
+// adds an element to the first
+console.log(thirdArray.unshift(0,0.3))
+console.log(thirdArray)
