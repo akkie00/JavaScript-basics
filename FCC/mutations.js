@@ -1,9 +1,8 @@
-function mutations(arr){
-    for(var i=0; i<arr.length; i++){
-        var lowStr = arr[i].toLowerCase().split('');
-        console.log(lowStr[])
-    }
+function mutations(arr) {
 
-    return arr;
+    var firstArg = arr[0].toLowerCase();
+    var secondArg = arr[1].toLowerCase();
+    console.log(firstArg, secondArg)
+    console.log(firstArg.indexOf(secondArg));
 }
-mutations(["hEllo", "hel"]);
+mutations(["hEllo", "hey"]);

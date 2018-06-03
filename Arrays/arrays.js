@@ -67,7 +67,11 @@ console.log(thirdArray.includes(1)); //this will simply check if the value is th
 console.log(thirdArray.includes(3, 3));
 
 12. //using indexOf()... returns the index of the value in the array
-console.log(thirdArray.indexOf(3));
+let var1 = "hey";
+var1.split('');
+let var2 = "helo";
+console.log(var1.split(''), var2.split(''));
+console.log(var2.split('').indexOf(var1.split('')));
 
 13. //using join()
 console.log(thirdArray.join(' - '));

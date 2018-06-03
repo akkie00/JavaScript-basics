@@ -1,17 +1,22 @@
 
 function repeatStringNumTimes(str, num) {
-    // repeat after me
-    // return str;
-    // var repeatMe;
-    // console.log(repeatMe);
+    var myStr="";
+    for(var i=0; i<num; i++){
+        // return str;
+        // console.log(str+=str);
+        myStr += str;
+    }
+    return myStr;
 
-    if(num > 0){
-        return str.repeat(num);
-    }
-    else
-    {
-        return "";
-    }
 }
 
-repeatStringNumTimes("abc", 3);
+console.log(repeatStringNumTimes("abc", 3));
+
+
+// if(num > 0){
+//     return str.repeat(num);
+// }
+// else
+// {
+//     return "";
+// }
