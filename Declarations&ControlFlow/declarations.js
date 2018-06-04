@@ -86,3 +86,71 @@ else{
     console.log("i'm not true");
 }
 
+7. //USING switch   
+function demo(arg){
+   
+    switch(arg){
+        case 'rookie':
+        console.log("its a rookie");
+        break;
+        case 'intermediate':
+        console.log('I know a bit of coding');
+        break;
+        case 'Advanced':
+        console.log('Can build some pretty good stuff');
+        break;
+        default:
+        console.log('You\'re not a coder yet');
+    }
+}
+demo('level zero')
+
+8. //USING for loop
+let arr = [1,2,3,4,5];
+
+for(let i=arr.length-1 ; i>=0; i--){
+    console.log(arr[i]);
+}
+
+9. //USING while loop
+function testWhile(arg){
+    let count = 0;
+    while(arg=== true){
+        count++;
+        console.log(count);
+        if(count ===5){
+            break;
+        }
+    }
+}
+testWhile(true);
+
+10. //USING do..while
+do{
+    console.log("at least once");
+}
+while(false){
+    console.log('false even');
+}
+
+11. //USING try..catch..finally
+
+function demoTry(arg){
+    // let value = 0;
+    try{
+        // if(arg>10){
+        //     console.log("I tired");
+        //     demoTry1();
+        // }
+        demoTry2();
+        throw 404;
+    }
+    catch(error){
+        // console.log('The value must be wrong');
+        console.error(error);
+    }
+    finally{
+        console.log('well, next time.')
+    }
+}
+demoTry(4);
