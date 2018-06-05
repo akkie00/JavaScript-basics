@@ -1,0 +1,50 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Events</title>
+    <script src="events.js"></script>
+</head>
+
+<!-- when the window is resized, it triggers an event -->
+<body onresize="reSize(event)" onscroll="scrollFun(event)" onpageshow="pageShow(event)" onpagehide="pageHide(event)">
+    <div class="container">
+        <!-- onclick event usage -->
+        <button onclick="clickFunction(event)">Click me</button>
+        <!-- ondblclick event usage -->
+        <button ondblclick="dblClickFunction(event)">Click me two times!</button>
+        <!-- onmousedown -->
+        <!-- when a user clicks on the button, it triggers the event as soon as the 
+        the button is clicked -->
+
+        <button onmousedown="downFunction(event)">I'm mouse down</button>
+        <!-- when a user clicks a button and plays around with it, and when brings it back 
+        over the button and releases it, only then it will trigger the event. -->
+
+        <button onmouseup="upFunction(event)">I'm up!</button>
+        <br><br>
+        <!-- onmouseenter -->
+        <button onmouseenter="mouseEnter(this)" onmouseleave="mouseLeave(this)">Hover over me!</button>
+        <!-- onmousemove -->
+        <button onmousemove="mouseMove(event)">Move over me</button>
+        <!-- onmouseout -->
+        <button onmouseout="mouseOut(event)">Get out of ME</button><br><br>
+        <!-- onkeydown -->
+        <input type="text" onkeydown="keyDown(event)" >
+        <!-- onkeyup -->
+        <input type="text" onkeypress="keyUp(event)" id=""> 
+        <!-- onresize .. Function is given in the body tag, just for sake-->
+        <h1>Some text during testing resize</h1>
+        <h1>For Scroll</h1>
+        <h1>For Scroll</h1>
+        <h1>For Scroll</h1>
+        <a href="https://www.google.com" target="_blank">google</a>
+        <h1 ondrag="dragMe(event)">you're dragging me</h1>
+        <h1 ondragend="dragEnd(event)">only triggers when you stop dragging me</h1>
+        <input type="text" ondragenter="draggedEnter(event)">
+        <div>
+</body>
+
+</html>
