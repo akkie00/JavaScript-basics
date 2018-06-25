@@ -40,10 +40,19 @@
         <h1>For Scroll</h1>
         <h1>For Scroll</h1>
         <h1>For Scroll</h1>
+        <!-- pageshow -->
         <a href="https://www.google.com" target="_blank">google</a>
+        <!-- ondrag -->
         <h1 ondrag="dragMe(event)">you're dragging me</h1>
+        <!-- ondragend -->
         <h1 ondragend="dragEnd(event)">only triggers when you stop dragging me</h1>
+        <!-- ondragenter -->
         <input type="text" ondragenter="draggedEnter(event)">
+        <!-- ondragleave -->
+        <input type="text" ondragleave="dragLeave(event)">
+        <!-- oncut -->
+        <br><br>
+        <input type="text" oncopy="copy(event)" oncut="cut(event)" onpaste="paste(event)">
         <div>
 </body>
 

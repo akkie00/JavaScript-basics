@@ -119,3 +119,24 @@ function draggedEnter(event){
     console.log("tested")
     console.log(event)
 }
+
+17. //using ondragleave
+//triggers the event the designated area is left
+function dragLeave(event){
+    console.log(event);
+}
+
+18. //using oncopy
+function copy(event){
+    console.log(event);
+}
+
+19. //using oncut
+function cut(event){
+    console.log(event);
+}
+
+20. //using paste
+function paste(event){
+    console.log(event)
+}
