@@ -1,0 +1,8 @@
+<script>
+    const examp = {name: 'Akshay'};
+    // localStorage.setItem('username', 'Akshay');
+    console.log(localStorage.setItem('username', JSON.stringify(examp)));
+    // localStorage.setItem('pwd', '123');
+    console.log (JSON.parse (localStorage.getItem('username')));
+    // localStorage.removeItem('pwd');
+</script>

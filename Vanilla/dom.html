@@ -8,7 +8,12 @@
 <body>
     <h1 class="ex1">hello world</h1>
     <p id="ex2">hi there world</p>
+    <input value="ok">
     <span>I'm here world</span>
+    <h1 id="e1">Testing InnerHtml</h1>
+    <h1 id="e2">Testing InnerText</h1>
+
+    <h1 id="classList">Testing classList</h1>
     <script>
     let withId = document.getElementById('ex2');
     let withClass = document.getElementsByClassName('ex1');
@@ -16,6 +21,32 @@
     console.log(withClass);
     console.log(withId);
     console.log(withTag);
+    let example1  = document.getElementById('e1');
+    example1.innerHTML = '<h1>testing</h1>';
+    console.log(example1);
+    let example2 = document.getElementById('e2');
+    example2.innerText = 'testingForText';
+    console.log(example2);
+    let example3 = document.getElementsByTagName('input')[0];
+    example3.setAttribute('type', 'button');
+    console.log(example3);
+    //best way to set the attribute is using style properties
+    example1.style.backgroundColor = 'red';
+
+        //we can add style classes using classList.add method
+    let addClass = document.getElementById('classList');
+    addClass.classList.add('coloredText');
+    //we can remove style classes using classList.add method
+    addClass.classList.remove('coloredText');
+    ////we can check if a particular class is present or not
+    addClass.classList.contains('coloredText')
+    console.log(addClass.classList.contains('coloredText'));
     </script>
+    <style>
+        .coloredText{
+            color: white;
+            background-color: black;
+        }
+    </style>
 </body>
 </html>
